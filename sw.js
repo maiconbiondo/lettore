@@ -1,6 +1,6 @@
 /* Service worker do Lettore — cache para uso offline.
    Ao mudar arquivos, incremente a versão do cache (CACHE). */
-const CACHE = "lettore-v5";
+const CACHE = "lettore-v6";
 
 const ASSETS = [
   "./index.html",
