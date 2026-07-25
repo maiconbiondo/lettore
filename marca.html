@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#171310" />
+<meta name="description" content="Guia de marca do Lettore: logo, cores, tipografia e tom de voz." />
+<link rel="icon" href="icons/icon-192.png" />
+<style>body{margin:0;background:#171310}.backbar{position:sticky;top:0;z-index:9;padding:12px 20px;font:600 14px/-apple-system,"Segoe UI",Roboto,sans-serif}.backbar a{color:#f6a821;text-decoration:none}</style>
+<title>Lettore — Guia de marca</title>
+<style>
+  :root {
+    --studio: #171310;
+    --surface: #221c16;
+    --surface-2: #2c251c;
+    --amber: #f6a821;
+    --amber-light: #ffc24d;
+    --amber-deep: #e8920e;
+    --cream: #f4ede2;
+    --muted: #a99e8c;
+    --line: rgba(244, 237, 226, 0.12);
+    --line-strong: rgba(244, 237, 226, 0.22);
+    --ok: #7bbf6a;
+    --no: #d9704f;
+    --sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --mono: "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  .bg {
+    background: var(--studio);
+    color: var(--cream);
+    font-family: var(--sans);
+    line-height: 1.6;
+    padding: clamp(1.5rem, 5vw, 4rem) 1.25rem 5rem;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  .bg :is(h1, h2, h3) { margin: 0; font-weight: 650; letter-spacing: -0.015em; text-wrap: balance; }
+  .bg p { margin: 0; }
+
+  .eyebrow {
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--amber);
+  }
+  .section { margin-top: clamp(3rem, 7vw, 5rem); animation: rise 0.7s cubic-bezier(0.22,1,0.36,1) both; }
+  .section > .eyebrow { display: block; margin-bottom: 1rem; }
+  .section > h2 { font-size: clamp(1.4rem, 3.5vw, 1.9rem); }
+  .lede { color: var(--muted); font-size: 1.05rem; max-width: 62ch; margin-top: 0.6rem; }
+  .rule { height: 1px; background: var(--line); border: 0; margin-top: clamp(3rem, 7vw, 5rem); }
+
+  /* Hero */
+  .hero { text-align: center; padding: clamp(1rem, 4vw, 2.5rem) 0 0; animation: rise 0.8s cubic-bezier(0.22,1,0.36,1) both; }
+  .tile {
+    display: inline-grid; place-items: center;
+    background: var(--studio);
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.03);
+  }
+  .hero .tile { width: 132px; height: 132px; border-radius: 30px; }
+  .hero h1 {
+    font-size: clamp(2.6rem, 9vw, 4rem); margin-top: 1.4rem;
+    letter-spacing: -0.03em; font-weight: 650;
+  }
+  .hero h1 .dot { color: var(--amber); }
+  .hero .tag { color: var(--muted); font-size: 1.05rem; margin-top: 0.3rem; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem;
+    padding: 0.4rem 0.9rem; border: 1px solid var(--line-strong); border-radius: 999px;
+    font-size: 0.8rem; color: var(--muted);
+  }
+  .badge .live { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 10px 1px var(--amber-deep); }
+
+  /* Logo variations */
+  .grid { display: grid; gap: 1rem; }
+  .cols-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .cols-2 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 1.25rem;
+  }
+  .logo-cell { display: flex; flex-direction: column; align-items: center; gap: 0.9rem; }
+  .logo-cell .tile { width: 92px; height: 92px; }
+  .logo-cell .name { font-size: 0.85rem; font-weight: 600; }
+  .logo-cell .note { font-size: 0.78rem; color: var(--muted); text-align: center; }
+
+  /* Clear space + min size row */
+  .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+  .spec { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 1.1rem 1.25rem; }
+  .spec h3 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .spec p { font-size: 0.9rem; color: var(--muted); }
+
+  /* Do / Don't */
+  .rules-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+  @media (max-width: 560px) { .rules-2 { grid-template-columns: 1fr; } }
+  .rulecol h3 { font-size: 0.85rem; letter-spacing: 0.02em; margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.5rem; }
+  .rulecol ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  .rulecol li { font-size: 0.9rem; color: var(--cream); padding-left: 1.3rem; position: relative; }
+  .rulecol li::before { position: absolute; left: 0; top: 0; font-weight: 700; }
+  .do li::before { content: "✓"; color: var(--ok); }
+  .dont li::before { content: "✕"; color: var(--no); }
+  .tick { color: var(--ok); } .cross { color: var(--no); }
+
+  /* Colors */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.85rem; }
+  .sw { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); }
+  .sw .chip { height: 84px; }
+  .sw .meta { padding: 0.7rem 0.85rem; }
+  .sw .role { font-size: 0.85rem; font-weight: 600; }
+  .sw .hex { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); margin-top: 0.15rem; text-transform: uppercase; }
+  .note-oklch { margin-top: 1rem; font-size: 0.88rem; color: var(--muted); }
+  .note-oklch code { font-family: var(--mono); color: var(--amber-light); font-size: 0.85em; }
+
+  /* Typography */
+  .type-row { border-top: 1px solid var(--line); padding: 1.2rem 0; display: grid; grid-template-columns: 130px 1fr; gap: 1rem; align-items: baseline; }
+  @media (max-width: 560px) { .type-row { grid-template-columns: 1fr; gap: 0.4rem; } }
+  .type-row .k { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .type-row .sample-serif { font-family: var(--serif); font-size: 1.5rem; line-height: 1.4; }
+  .type-row .sample-sans { font-family: var(--sans); font-size: 1.25rem; }
+  .type-row .sample-word { font-size: 1.8rem; font-weight: 650; letter-spacing: -0.02em; }
+  .type-row .sub { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+
+  /* Voice */
+  .voice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+  @media (max-width: 560px) { .voice-grid { grid-template-columns: 1fr; } }
+  .quote { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 12px; padding: 0.9rem 1.1rem; font-size: 1.02rem; }
+  .quote span { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; }
+  .principles { list-style: none; margin: 1.2rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+  .principles li { padding-left: 1.4rem; position: relative; color: var(--cream); }
+  .principles li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 7px; height: 7px; background: var(--amber); border-radius: 50%; }
+  .principles b { font-weight: 650; }
+
+  footer.foot { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 0.85rem; }
+  footer.foot .dot { color: var(--amber); }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .section, .hero { animation: none; } }
+</style>
+
+</head>
+<body>
+<div class="backbar"><a href="./index.html">← Voltar ao Lettore</a></div>
+<div class="bg">
+  <div class="wrap">
+
+    <header class="hero">
+      <span class="tile">
+        <svg viewBox="0 0 96 96" width="88" height="88" aria-label="Marca Lettore">
+          <path d="M20 34 v-6 a8 8 0 0 1 8-8 h6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+          <path d="M62 20 h6 a8 8 0 0 1 8 8 v6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+          <path d="M76 62 v6 a8 8 0 0 1 -8 8 h-6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+          <path d="M20 56 v12 a8 8 0 0 0 8 8 h12" fill="none" stroke="#F6A821" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="48" cy="48" r="8" fill="#F6A821"/>
+          <path d="M35 41 a15 15 0 0 0 0 14" fill="none" stroke="#F6A821" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+          <path d="M61 41 a15 15 0 0 1 0 14" fill="none" stroke="#F6A821" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+        </svg>
+      </span>
+      <h1>Lettore<span class="dot">.</span></h1>
+      <p class="tag">estúdio de leitura</p>
+      <span class="badge"><span class="live"></span> Guia de marca · v1.0</span>
+    </header>
+
+    <section class="section">
+      <span class="eyebrow">Essência</span>
+      <h2>Um estúdio no seu bolso.</h2>
+      <p class="lede">O Lettore transforma texto em voz e em teleprompter — para quem lê e para quem grava. A marca vive num estúdio escuro: foco, calma e o âmbar de um sinal “on air”. Tudo direto ao ponto, honesto sobre os limites, sem firula.</p>
+      <div class="specs">
+        <div class="spec"><h3>O que é</h3><p>Leitor de textos e teleprompter, offline, que também grava você lendo pela câmera.</p></div>
+        <div class="spec"><h3>Para quem</h3><p>Leitores, criadores de conteúdo e quem apresenta — no celular ou no navegador.</p></div>
+        <div class="spec"><h3>Sensação</h3><p>Estúdio ao vivo: escuro, focado, com o ponto âmbar acendendo quando está gravando.</p></div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="section">
+      <span class="eyebrow">Logo</span>
+      <h2>O visor com a luz acesa.</h2>
+      <p class="lede">A marca é um <b>visor de estúdio</b> — quatro cantos enquadrando a cena. O canto inferior esquerdo é pintado de âmbar e forma o <b>L</b> de Lettore; no centro, o <b>ponto “on air”</b> transmite. É o mesmo ponto que pisca no app quando a gravação começa.</p>
+
+      <div class="grid cols-3" style="margin-top:1.5rem">
+        <div class="card logo-cell">
+          <span class="tile">
+            <svg viewBox="0 0 96 96" width="60" height="60" aria-hidden="true">
+              <path d="M20 34 v-6 a8 8 0 0 1 8-8 h6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+              <path d="M62 20 h6 a8 8 0 0 1 8 8 v6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+              <path d="M76 62 v6 a8 8 0 0 1 -8 8 h-6" fill="none" stroke="#F4EDE2" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+              <path d="M20 56 v12 a8 8 0 0 0 8 8 h12" fill="none" stroke="#F6A821" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="48" cy="48" r="8" fill="#F6A821"/>
+              <path d="M35 41 a15 15 0 0 0 0 14" fill="none" stroke="#F6A821" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+              <path d="M61 41 a15 15 0 0 1 0 14" fill="none" stroke="#F6A821" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+            </svg>
+          </span>
+          <span class="name">Ícone principal</span>
+          <span class="note">Uso padrão — app, favicon, avatar.</span>
+        </div>
+        <div class="card logo-cell">
+          <span class="tile" style="background:var(--surface-2)">
+            <svg viewBox="0 0 96 96" width="60" height="60" aria-hidden="true" style="color:var(--cream)">
+              <path d="M20 34 v-6 a8 8 0 0 1 8-8 h6" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+              <path d="M62 20 h6 a8 8 0 0 1 8 8 v6" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+              <path d="M76 62 v6 a8 8 0 0 1 -8 8 h-6" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+              <path d="M20 56 v12 a8 8 0 0 0 8 8 h12" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="48" cy="48" r="8" fill="currentColor"/>
+              <path d="M35 41 a15 15 0 0 0 0 14" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+              <path d="M61 41 a15 15 0 0 1 0 14" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+            </svg>
+          </span>
+          <span class="name">Monocromático</span>
+          <span class="note">Uma cor só — gravação, carimbo, fundo colorido.</span>
+        </div>
+        <div class="card logo-cell">
+          <span class="tile" style="width:60px;height:60px;border-radius:16px">
+            <svg viewBox="0 0 96 96" width="40" height="40" aria-hidden="true">
+              <path d="M18 52 v14 a10 10 0 0 0 10 10 h14" fill="none" stroke="#F6A821" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="48" cy="46" r="12" fill="#F6A821"/>
+            </svg>
+          </span>
+          <span class="name">Reduzido</span>
+          <span class="note">Tamanhos mínimos — canto-L + ponto âmbar.</span>
+        </div>
+      </div>
+
+      <div class="specs">
+        <div class="spec"><h3>Espaço livre</h3><p>Mantenha uma margem ≥ metade da altura do ícone livre de textos e outros elementos.</p></div>
+        <div class="spec"><h3>Tamanho mínimo</h3><p>Não use abaixo de <b>24&nbsp;px</b>. Nesse ponto, prefira a versão reduzida.</p></div>
+        <div class="spec"><h3>Fundo</h3><p>Sempre sobre o tile escuro (<span style="font-family:var(--mono);color:var(--amber-light)">#171310</span>). A marca nasce no escuro.</p></div>
+      </div>
+
+      <div class="rules-2">
+        <div class="rulecol do">
+          <h3><span class="tick">✓</span> Faça</h3>
+          <ul>
+            <li>Use o âmbar sobre o tile escuro.</li>
+            <li>Dê espaço livre ao redor.</li>
+            <li>Use o reduzido quando faltar espaço.</li>
+          </ul>
+        </div>
+        <div class="rulecol dont">
+          <h3><span class="cross">✕</span> Não faça</h3>
+          <ul>
+            <li>Não troque o âmbar por outra cor no logo.</li>
+            <li>Não estique, gire ou distorça.</li>
+            <li>Não coloque sobre fundo claro ou ruidoso sem o tile.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="section">
+      <span class="eyebrow">Cores</span>
+      <h2>Escuro de estúdio, âmbar de “on air”.</h2>
+      <p class="lede">O fundo escuro é a marca — cansa menos os olhos e ilumina menos o rosto ao gravar. O âmbar carrega a identidade: ação, seleção, o ponto que grava.</p>
+      <div class="swatches" style="margin-top:1.5rem">
+        <div class="sw"><div class="chip" style="background:#171310;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="role">Estúdio</div><div class="hex">#171310</div></div></div>
+        <div class="sw"><div class="chip" style="background:#221c16"></div><div class="meta"><div class="role">Superfície</div><div class="hex">#221C16</div></div></div>
+        <div class="sw"><div class="chip" style="background:#f6a821"></div><div class="meta"><div class="role">Âmbar · marca</div><div class="hex">#F6A821</div></div></div>
+        <div class="sw"><div class="chip" style="background:#ffc24d"></div><div class="meta"><div class="role">Âmbar claro</div><div class="hex">#FFC24D</div></div></div>
+        <div class="sw"><div class="chip" style="background:#e8920e"></div><div class="meta"><div class="role">Âmbar profundo</div><div class="hex">#E8920E</div></div></div>
+        <div class="sw"><div class="chip" style="background:#f4ede2"></div><div class="meta"><div class="role">Creme · texto</div><div class="hex">#F4EDE2</div></div></div>
+      </div>
+      <p class="note-oklch">No app, os tons derivam em <b>OKLCH</b> a partir do matiz âmbar <code>--h: 75</code> — o que deixa trocar a cor de destaque mantendo o contraste legível nos temas claro e escuro. O tema <b>escuro é o padrão</b>.</p>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="section">
+      <span class="eyebrow">Tipografia</span>
+      <h2>Fontes do sistema, de propósito.</h2>
+      <p class="lede">O Lettore é offline-first: nada de webfonts que quebrariam sem internet. Cada papel usa uma pilha do sistema, com fallback que funciona no Windows, Android e Apple.</p>
+      <div style="margin-top:1rem">
+        <div class="type-row">
+          <div class="k">Marca</div>
+          <div><div class="sample-word">Lettore<span style="color:var(--amber)">.</span></div><div class="sub">O ponto é sempre âmbar. Sans do sistema, peso médio.</div></div>
+        </div>
+        <div class="type-row">
+          <div class="k">Interface</div>
+          <div><div class="sample-sans">Reproduzir · Modo teleprompter · Salvar</div><div class="sub">Segoe UI / -apple-system / Roboto — clara e neutra.</div></div>
+        </div>
+        <div class="type-row">
+          <div class="k">Leitura</div>
+          <div><div class="sample-serif">O texto que você cola aparece aqui, calmo e legível.</div><div class="sub">Serifa por padrão (Iowan / Palatino) — 9 estilos à escolha.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section class="section">
+      <span class="eyebrow">Tom de voz</span>
+      <h2>Direto, caloroso e honesto.</h2>
+      <p class="lede">Fala como um bom parceiro de estúdio: explica o essencial, avisa quando algo não dá, não enrola. Frases curtas, em caixa baixa, sem jargão corporativo.</p>
+      <div class="voice-grid">
+        <div class="quote">Dê Play.<span>Botão — verbo, direto.</span></div>
+        <div class="quote">Câmera ligada. Toque em Salvar.<span>Status — o que aconteceu e o próximo passo.</span></div>
+        <div class="quote">Esta voz não respondeu — tente outra.<span>Erro — sem “desculpe”, com a saída.</span></div>
+        <div class="quote">Vídeo pronto.<span>Confirmação — o resultado já é a mensagem.</span></div>
+      </div>
+      <ul class="principles">
+        <li><b>Honesto acima de tudo.</b> Se algo tem limite (offline, iOS, câmera), a gente diz.</li>
+        <li><b>Verbo na frente.</b> “Abrir arquivo”, não “Abertura de arquivo”.</li>
+        <li><b>Sem firula.</b> Nada de “simplesmente”, “fácil”, “incrível”.</li>
+        <li><b>Português de gente.</b> Caloroso, próximo, caixa baixa.</li>
+      </ul>
+    </section>
+
+    <footer class="foot">
+      Lettore<span class="dot">.</span> · Guia de marca v1.0 · por Maicon J. Biondo
+    </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
